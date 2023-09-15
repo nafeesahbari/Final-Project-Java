@@ -12,7 +12,7 @@
 - Install JDK compatible with Spring Boot.
 - Install an IDE: IntelliJ or Eclipse.
 - Install Spring Boot: Use Spring Initializr to create a Spring Boot project with necessary dependencies.
-  - [Spring Initializer](https://start.spring.io/)
+  - [Spring Initializr](https://start.spring.io/)
 
 ## Step 2: Design Your System
 - Identify/detrmine the core entities: Users, Concerts, Bookings, & Payments.
