@@ -30,12 +30,12 @@
 - Create a Booking entity: Define the Booking entity class with attributes like user, concert, booking date, etc.
 - Implement booking creation API: Create endpoints for users to book concert tickets, considering ticket availability and validation.
 
+## Step 5: Implement Mock Payment Processing
+- Create a Payment entity: Define a Payment entity class with attributes like payment amount, payment status, booking reference, etc.
+- Implement payment API: Create an endpoint for users to simulate making a payment. When a user makes a booking, generate a mock payment record and associate it with the booking.
+
 ##
 ## ------------------------------ EXTRAS ------------------------------
-
-## Step 5: Implement Payment Processing
-- Integrate Payment Gateway: Choose a payment method that a user would like to use & integrate it into your system. Spring Boot has libraries and resources to help with this integration.
-- Implement payment API: Create endpoints to handle payment processing, including payment confirmation and error handling.
 
 ## Step 6: Test Your Application
 - Write unit tests: Create unit tests for your controllers, services, and repositories to ensure that each component works as expected.
