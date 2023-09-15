@@ -30,7 +30,9 @@
 - Create a Booking entity: Define the Booking entity class with attributes like user, concert, booking date, etc.
 - Implement booking creation API: Create endpoints for users to book concert tickets, considering ticket availability and validation.
 
-## EXTRAS
+##
+## ------------ EXTRAS ------------
+##
 
 ## Step 5: Implement Payment Processing
 - Integrate Payment Gateway: Choose a payment method that a user would like to use & integrate it into your system. Spring Boot has libraries and resources to help with this integration.
