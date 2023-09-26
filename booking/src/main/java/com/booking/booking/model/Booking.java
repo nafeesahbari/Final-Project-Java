@@ -2,6 +2,7 @@ package com.booking.booking.model;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
 import javax.persistence.*;
 import java.util.Date;
 
