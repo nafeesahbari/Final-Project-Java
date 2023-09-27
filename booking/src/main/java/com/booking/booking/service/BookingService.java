@@ -1,17 +1,14 @@
 package com.booking.booking.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import com.booking.booking.repository.BookingRepository;
+import com.booking.booking.model.Booking;
+import com.booking.booking.model.Concert;
+import com.booking.booking.model.User;
 
-@Service
-public class BookingService {
-    private final BookingRepository bookingRepository;
+import java.util.List;
 
-    @Autowired
-    public BookingService(BookingRepository bookingRepository) {
-        this.bookingRepository = bookingRepository;
-    }
-
+public interface BookingService {
+    Booking createBooking(User user, Concert concert);
+    List<Booking> getUserBookings(User user);
+    List<Booking> getConcertBookings(Concert concert);
 }
 
