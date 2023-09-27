@@ -1,9 +1,8 @@
 # Final-Project-Java
 
 ## Final Project Overview
-- Create presentation slides about experience with OOP & Spring/Spring Boot in the last 2 weeks.
-- In the slides: Include a project that used the 2nd language (what we learnt in these 2 weeks).
-- Maybe some command-line input/output or if front-end, some UI input/output to justify learning progress.
+- Presentation about experience with OOP & Spring/Spring Boot in the last 2 weeks.
+- Include a project that used the 2nd language (what we learnt in these 2 weeks).
 - ✅ Concert Booking System ✅
   - Use Java OOP and/or Spring Boot
   - For services of music concert dates. Implement user registration, booking creation, and payment processing using Spring Boot.
