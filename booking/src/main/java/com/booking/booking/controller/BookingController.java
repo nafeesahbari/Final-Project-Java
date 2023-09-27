@@ -17,6 +17,7 @@ import javax.validation.Valid;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/bookings")
@@ -65,8 +66,13 @@ public class BookingController {
         if (user == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        List<Booking> bookings = bookingRepository.findAllByUser(user);
-        return new ResponseEntity<>(bookings, HttpStatus.OK);
+
+        List<Booking> allBookings = bookingRepository.findAll();
+        List<Booking> userBookings = allBookings.stream()
+                .filter(booking -> booking.getUser().equals(user))
+                .collect(Collectors.toList());
+
+        return new ResponseEntity<>(userBookings, HttpStatus.OK);
     }
 
     @GetMapping("/concert/{concertId}")
@@ -75,7 +81,13 @@ public class BookingController {
         if (concert == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        List<Booking> bookings = bookingRepository.findAllByConcert(concert);
-        return new ResponseEntity<>(bookings, HttpStatus.OK);
+
+        List<Booking> allBookings = bookingRepository.findAll();
+        List<Booking> concertBookings = allBookings.stream()
+                .filter(booking -> booking.getConcert().equals(concert))
+                .collect(Collectors.toList());
+
+        return new ResponseEntity<>(concertBookings, HttpStatus.OK);
     }
 }
+
